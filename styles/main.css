@@ -12067,6 +12067,27 @@ body {
     z-index: 3;
     width: 100%;
   }
+  .nav-item {
+    position: relative;
+    transition: all 1s;
+  }
+  .nav-item::after {
+    position: absolute;
+    right: 0;
+    transition: 0.2s;
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: #919135;
+    width: 0;
+  }
+  .nav-item:hover::after {
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: #919135;
+    width: 10%;
+  }
 }
 .intro {
   font-size: large;
