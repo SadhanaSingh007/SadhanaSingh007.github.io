@@ -11860,18 +11860,46 @@ textarea.form-control-lg {
 }
 
 body {
-  background-color: #644212;
+  background-color: rgba(100, 66, 18, 0.9725490196);
 }
 
 .navbar {
   position: fixed;
   z-index: 3;
   width: 100%;
+  padding-left: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.nav-item {
+  position: relative;
+  transition: all 1s;
+}
+.nav-item::after {
+  position: absolute;
+  transition: 0.2s;
+  display: block;
+  content: "";
+  height: 3px;
+  background-color: #919135;
+  width: 0;
+}
+.nav-item:hover::after {
+  display: block;
+  content: "";
+  height: 3px;
+  background-color: #919135;
+  width: 100%;
+}
+
+.navbar-brand {
+  transition: 1s;
 }
 
 .navbar-brand:hover {
   color: #e7b127;
-  font-size: 22px;
+  transform: scale(1.2);
   text-shadow: 2px -2px 2px #794607;
 }
 
@@ -11993,8 +12021,8 @@ body {
 }
 
 .round {
-  width: 250px;
-  height: 250px;
+  width: 180px;
+  height: 180px;
   border: 8px solid white;
   border-radius: 50%;
 }
