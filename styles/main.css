@@ -11863,6 +11863,12 @@ body {
   background-color: #644212;
 }
 
+.navbar {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+}
+
 .navbar-brand:hover {
   color: #e7b127;
   font-size: 22px;
@@ -12029,6 +12035,9 @@ body {
 @media (max-width: 990px) {
   .navbar {
     text-align: right;
+    position: fixed;
+    z-index: 3;
+    width: 100%;
   }
 }
 .intro {
